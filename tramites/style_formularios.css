@@ -1,0 +1,207 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Poppins', sans-serif;
+ }
+body{
+	
+}
+ .container{
+ 	height: 100vh;
+ 	width: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ }
+ .form{
+ 	position: relative;
+ 	max-width: 900px;
+ 	width: 100%;
+ 	padding: 30px;
+ 	border-radius: 6px;
+ 	background: #fff;
+ 	border-color: #000000;
+ }
+ header{
+ 	font-size: 28px;
+ 	font-weight: 600;
+ 	color: #000000;
+ 	text-align: center;
+ }
+form{
+ 	margin-top: 0;
+ }
+
+ #columnas{
+ 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+	gap:35px;
+ }
+#precio_boton{
+	width: 48%;
+}
+form .field{
+ 	position: relative;
+ 	height: 50px;
+ 	width: 100%;
+ 	margin-top: 25px;
+ }
+ .field input{
+ 	height: 80%;
+ 	width: 100%;
+ 	border: none;
+ 	font-size: 16px;
+ 	font-weight: 400;
+ 	border-radius: 6px;
+ }
+.field .caja{
+	outline: none;
+	padding: 0 15px;
+	border: 1px solid #111111;
+	background-color: #F8F8F8;
+}
+.field .caja:focus{
+	border-bottom-width: 2px;
+}
+
+form .file{
+	position: relative;
+ 	height: 50px;
+ 	width: 93%;
+ 	margin-top: 20px;
+}
+.tooltip1{
+	font-weight: normal;
+	color: #000;
+	text-decoration: none;
+	position: relative;
+	top: -30px;
+	left: 102%;
+}
+.tooltip1:hover {
+	text-decoration: underline;
+}
+.tooltip1:hover .tooltip1-box{
+	display: inline-block;
+}
+.tooltip1-box{
+	display: none;
+	position: absolute;
+	background: #000;
+	line-height: 20px;
+	z-index: 500;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	left: -10px;
+	bottom: 30px;
+}
+.tooltip1-box::after{
+	content: "";
+	display: block;
+	border-top: 7px solid #000;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	position: absolute;
+	bottom: -7px;
+	left: 10px;
+
+}
+
+
+/*---------------Nombre--------------------*/
+.field.nombres.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+}
+/*--------------Telefono-----------------------*/
+.field.telefono.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+}
+/*--------------Telefono-----------------------*/
+.field.placa.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+}
+
+
+#precios{
+	position: relative;
+	top: 15px;
+	padding-top: 25px;
+	
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.field #enviar{
+	color: #fff;
+	background-color: #B40505;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	margin-top: -13px;
+
+}
+.field #enviar:hover{
+	background-color: #111111;
+}
+
+.form-link{
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+.form-link span,
+.form-link a{
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+
+}
+.form a{
+	color: #D9002B;
+	text-decoration: none;
+	font-weight: bold;
+}
+.form-content a:hover{
+	text-decoration: underline;
+}
+i.bx-arrow-back,
+i.bx-log-out{
+	color: #B40505;
+	cursor: pointer;
+	font-size: 20px;
+	position: relative;
+	left: 45%;
+}
+
+
+
+@media screen and (max-width: 764px){
+
+	.form{
+		
+		max-width: 430px;
+ 		width: 100%;
+ 		
+
+	}
+	header{
+ 	font-size: 24px;
+ 	
+ }
+	#precio_boton{
+		width: 100%;
+	}
+	#columnas .columnsP{
+		margin-top: -22px;
+	}
+	
+}

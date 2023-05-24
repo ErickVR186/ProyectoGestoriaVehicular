@@ -1,0 +1,282 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Poppins', sans-serif;
+ }
+ .container{
+ 	height: 100vh;
+ 	width: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	background-image: url(img/fondoSignLogin.webp);
+ 	background-position: center center;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ }
+ .form{
+ 	position: absolute;
+ 	max-width: 430px;
+ 	width: 100%;
+ 	padding: 25px;
+ 	border-radius: 6px;
+ 	background: #fff;
+ 	border-color: #000000;
+ }
+ header{
+ 	font-size: 28px;
+ 	font-weight: 600;
+ 	color: #000000;
+ 	text-align: center;
+ }
+ form{
+ 	margin-top: 30px;
+ }
+ form .field{
+ 	position: relative;
+ 	height: 50px;
+ 	width: 100%;
+ 	margin-top: 28px;
+ }
+ .field input,
+ .field button{
+ 	height: 80%;
+ 	width: 100%;
+ 	border: none;
+ 	font-size: 16px;
+ 	font-weight: 400;
+ 	border-radius: 6px;
+ }
+.field input{
+	outline: none;
+	padding: 0 15px;
+	border: 1px solid #111111;
+	background-color: #F8F8F8;
+}
+.field input:focus{
+	border-bottom-width: 2px;
+}
+/*alertas*/
+#mostrarPass{
+	visibility: visible;
+}
+
+.field i{
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	visibility: hidden;
+}
+.field small{
+	visibility: hidden;
+}
+.form-link small{
+	visibility: hidden;
+}
+/*---------------Nombres--------------------*/
+.field.nombres.success i.bxs-check-circle,
+.field.nombres.success input{
+	border-color: #2ecc71;
+	color: #2ecc71;
+	visibility: visible;
+}
+.field.nombres.success small{
+	position: relative;
+	left: 6px;
+	color: #2ecc71;
+	visibility: hidden;
+}
+.field.nombres.error i.bxs-error-circle,
+.field.nombres.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+	visibility: visible;
+}
+.field.nombres.error small{
+	position: absolute;
+	top: 44px;
+	left: 6px;
+	color: #D9002B;
+	visibility: visible;
+}
+
+/*--------------Apellidos--------------------*/
+.field.apellidos.success i.bxs-check-circle,
+.field.apellidos.success input{
+	border-color: #2ecc71;
+	color: #2ecc71;
+	visibility: visible;
+}
+.field.apellidos.success small{
+	position: relative;
+	left: 6px;
+	color: #2ecc71;
+	visibility: hidden;
+}
+.field.apellidos.error i.bxs-error-circle,
+.field.apellidos.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+	visibility: visible;
+}
+.field.apellidos.error small{
+	position: absolute;
+	top: 44px;
+	left: 6px;
+	color: #D9002B;
+	visibility: visible;
+}
+
+/*-------------Correo----------------*/
+.field.email.success i.bxs-check-circle,
+.field.email.success input{
+	border-color: #2ecc71;
+	color: #2ecc71;
+	visibility: visible;
+}
+.field.email.success small{
+	position: relative;
+	left: 6px;
+	color: #2ecc71;
+	visibility: hidden;
+}
+.field.email.error i.bxs-error-circle,
+.field.email.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+	visibility: visible;
+}
+.field.email.error small{
+	position: absolute;
+	top: 44px;
+	left: 6px;
+	color: #D9002B;
+	visibility: visible;
+}
+
+/*--------------Password---------------------*/
+.field.password.success i.bxs-check-circle,
+.field.password.success input{
+	border-color: #2ecc71;
+	color: #2ecc71;
+	visibility: visible;
+}
+.field.password.success small{
+	position: relative;
+	left: 6px;
+	color: #2ecc71;
+	visibility: hidden;
+}
+.field.password.error i.bxs-error-circle,
+.field.password.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+	visibility: visible;
+}
+.field.password.error small{
+	position: absolute;
+	top: 38px;
+	left: 6px;
+	color: #D9002B;
+	visibility: visible;
+	text-align: justify;
+}
+/*--------------Password Confirmación--------------------*/
+.field.passConfir.success i.bxs-check-circle,
+.field.passConfir.success input{
+	border-color: #2ecc71;
+	color: #2ecc71;
+	visibility: visible;
+}
+.field.passConfir.success small{
+	position: relative;
+	left: 6px;
+	color: #2ecc71;
+	visibility: hidden;
+}
+.field.passConfir.success .eye-icon{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+.field.passConfir.error i.bxs-error-circle,
+.field.passConfir.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+	visibility: visible;
+}
+.field.passConfir.error small{
+	position: absolute;
+	top: 40px;
+	left: 6px;
+	color: #D9002B;
+	visibility: visible;
+}
+.field.passConfir.error .eye-icon{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+/*-----------------------------*/
+.form-link.checkTerm.success small{
+	visibility: hidden;
+}
+.form-link.checkTerm.error small{
+	color: #D9002B;
+	visibility: visible;
+}
+
+
+.field .eye-icon{
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	transform: translateY(-50%);
+	font-size: 18px;
+	color: #000000;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.field button{
+	color: #fff;
+	background-color: #B40505;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	margin-top: -13px;
+}
+.field button:hover{
+	background-color: #111111;
+}
+
+
+.form-link{
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+.form-link span,
+.form-link a{
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+
+}
+.form a{
+	color: #D9002B;
+	text-decoration: none;
+	font-weight: bold;
+}
+.form-content a:hover{
+	text-decoration: underline;
+}
+
+
+@media screen and (max-width: 400px){
+	.form{
+		padding: 15px 10px;
+	}
+}

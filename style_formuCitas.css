@@ -1,0 +1,198 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Poppins', sans-serif;
+ }
+ .container{
+ 	height: 100vh;
+ 	width: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	background-image: url(img/car2.jpg);
+ 	background-position: center center;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ }
+ .form{
+ 	position: absolute;
+ 	max-width: 430px;
+ 	width: 100%;
+ 	padding: 25px;
+ 	border-radius: 6px;
+ 	background: #fff;
+ 	border-color: #000000;
+ }
+ header{
+ 	font-size: 28px;
+ 	font-weight: 600;
+ 	color: #000000;
+ 	text-align: center;
+ }
+ form{
+ 	margin-top: 30px;
+ }
+ form .field{
+ 	position: relative;
+ 	height: 50px;
+ 	width: 100%;
+ 	margin-top: 15px;
+ }
+ .field input,
+ .field select,
+ .field button{
+ 	height: 80%;
+ 	width: 100%;
+ 	border: none;
+ 	font-size: 16px;
+ 	font-weight: 400;
+ 	border-radius: 6px;
+ }
+.field input, .field select{
+	outline: none;
+	padding: 0 15px;
+	border: 1px solid #111111;
+	background-color: #F8F8F8;
+}
+.field input, .field select:focus{
+	border-bottom-width: 2px;
+}
+form #fechadiv {
+	position: relative;
+	left: 10%;
+ 	height: 50px;
+ 	width: 45%;
+ 	margin-top: 15px;
+}
+form #horadiv {
+	position: relative;
+	top:-65px;
+	left: 65%;
+
+ 	height: 50px;
+ 	width: 25%;
+ 	margin-top: 15px;
+}
+.fechahora input{
+	height: 80%;
+ 	width: 100%;
+ 	border: none;
+ 	font-size: 16px;
+ 	font-weight: 400;
+ 	border-radius: 6px;
+ 	outline: none;
+	padding: 0 15px;
+	border: 1px solid #111111;
+	background-color: #F8F8F8;
+}
+.fechahora:focus{
+	border-bottom-width: 2px;
+}
+/*alertas*/
+#mostrarPass{
+	visibility: visible;
+}
+
+.field i{
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	visibility: hidden;
+}
+.field small{
+	visibility: hidden;
+}
+.form-link small{
+	visibility: hidden;
+}
+/*---------------Nombres--------------------*/
+.field.nombres.success i.bxs-check-circle,
+.field.nombres.success input{
+	border-color: #2ecc71;
+	color: #2ecc71;
+	visibility: visible;
+}
+.field.nombres.success small{
+	position: relative;
+	left: 6px;
+	color: #2ecc71;
+	visibility: hidden;
+}
+.field.nombres.error i.bxs-error-circle,
+.field.nombres.error input{
+	border-color: #D9002B;
+	color: #D9002B;
+	visibility: visible;
+}
+.field.nombres.error small{
+	position: absolute;
+	top: 44px;
+	left: 6px;
+	color: #D9002B;
+	visibility: visible;
+}
+
+
+.field button{
+	color: #fff;
+	background-color: #B40505;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	margin-top: -13px;
+}
+.field button:hover{
+	background-color: #111111;
+}
+
+
+.form-link{
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+.form-link span,
+.form-link a{
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+
+}
+.form a{
+	color: #D9002B;
+	text-decoration: none;
+	font-weight: bold;
+}
+.form-content a:hover{
+	text-decoration: underline;
+}
+i.bx-arrow-back,
+i.bx-log-out{
+	color: #B40505;
+	cursor: pointer;
+	font-size: 20px;
+	position: relative;
+	left: 45%;
+}
+
+.fechahora i{
+	position: absolute;
+	top: 20px;
+	right: 5px;
+	transform: translateY(-50%);
+	font-size: 18px;
+	color: #000000;
+	padding: 5px;
+}
+.botonMas{
+	position: relative;
+	top: -50px;
+	margin-bottom: -40px;
+}
+@media screen and (max-width: 400px){
+	.form{
+		padding: 15px 10px;
+	}
+}
